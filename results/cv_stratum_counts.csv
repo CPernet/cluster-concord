@@ -1,0 +1,17 @@
+"sex","medication","age_bin","n","can_populate_every_fold"
+"Female","No","[18,30)",114,TRUE
+"Male","No","[18,30)",41,TRUE
+"Female","Yes","[18,30)",40,TRUE
+"Male","Yes","[18,30)",16,TRUE
+"Female","No","[30,42)",18,TRUE
+"Male","No","[30,42)",10,TRUE
+"Female","Yes","[30,42)",19,TRUE
+"Male","Yes","[30,42)",15,TRUE
+"Female","No","[42,54)",4,FALSE
+"Male","No","[42,54)",2,FALSE
+"Female","Yes","[42,54)",14,TRUE
+"Male","Yes","[42,54)",9,TRUE
+"Female","No","[54,66)",8,TRUE
+"Male","No","[54,66)",6,TRUE
+"Female","Yes","[54,66)",6,TRUE
+"Male","Yes","[54,66)",6,TRUE

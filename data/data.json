@@ -1,0 +1,282 @@
+{
+  "ID": {
+    "LongName": "Random replacement participant identifier",
+    "Description": "Unique, fully randomly generated replacement identifier for each participant, as confirmed by the data provider. It is not derived from the original identifying code and is not a cognitive measurement. Random replacement identifiers alone do not establish anonymity of the participant-level data. The original-to-replacement mapping is not included in this data dictionary."
+  },
+  "Age at neuropsych test": {
+    "LongName": "Privacy-recoded age at neuropsychological assessment",
+    "Description": "Age represented by three-year bin midpoints anchored at 18 years: for example, 19.5 represents the 18 to less than 21 years bin. The final upper endpoint was included in the last bin during binning. One age value was reassigned to a neighboring bin for privacy protection; therefore these values must not be interpreted as exact ages or universally accurate age intervals. The analysis uses broader 12-year age bands anchored at 18 for cross-validation balance.",
+    "Units": "year"
+  },
+  "Gender": {
+    "LongName": "Recorded gender",
+    "Description": "Gender category recorded in the source dataset. Does it represent self-identified gender or sex assigned at birth?",
+    "Levels": {
+      "Female": "Recorded as female.",
+      "Male": "Recorded as male."
+    }
+  },
+  "BDDin Q9 - Antidepressants": {
+    "LongName": "Antidepressant status, source item Q9",
+    "Description": "Recorded antidepressant status. NA denotes missing status, not a third medication category.",
+    "Levels": {
+      "Yes": "Antidepressant use reported.",
+      "No": "No antidepressant use reported."
+    }
+  },
+  "SRT - Total mean reaction latency": {
+    "LongName": "Simple Reaction Time task: mean reaction latency",
+    "Description": "Mean response latency in the Simple Reaction Time (SRT) task, assessing reaction time. Lower latency indicates faster responding. The source header does not specify a time unit; milliseconds are plausible but unverified, so Units is deliberately omitted.",
+    "Units": "ms"
+  },
+  "Trail making B - # of sec": {
+    "LongName": "Trail Making Test Part B: completion time",
+    "Description": "Time to complete Trail Making Test (TMT) Part B, assessing executive function and psychomotor speed. Lower times indicate faster completion. The analysis derives a B-minus-A completion-time difference from the two TMT columns.",
+    "Units": "s"
+  },
+  "Trail making A - # of sec": {
+    "LongName": "Trail Making Test Part A: completion time",
+    "Description": "Time to complete Trail Making Test (TMT) Part A, assessing psychomotor speed. Lower times indicate faster completion.",
+    "Units": "s"
+  },
+  "SDMT total score": {
+    "LongName": "Symbol Digit Modalities task: total score",
+    "Description": "Total raw score on the Symbol Digit Modalities task (SDMT), used in this study to assess psychomotor speed and working memory. Higher scores indicate better performance. Administration mode and detailed scoring rules are not specified in the available project materials.",
+    "Units": "arbitrary"
+  },
+  "Letter-number sequencing total score": {
+    "LongName": "WAIS-IV Letter Number Sequencing: total score",
+    "Description": "Total raw score on the WAIS-IV Letter Number Sequencing (LNS) task, assessing working memory. Higher scores indicate better performance. This is the source total score, not an age-standardized score.",
+    "Units": "arbitrary"
+  },
+  "D-KEFS (STROOP) - Color-word interference condition 4 raw score": {
+    "LongName": "D-KEFS Color-Word Interference: Condition 4 raw score",
+    "Description": "Raw score for Condition 4 (inhibition/switching) of the Delis-Kaplan Executive Function System (D-KEFS) Color-Word Interference task, assessing executive function. The analysis treats this column as Stroop completion time. The workbook header does not specify units or the exact raw-score definition; these require confirmation before assigning Units."
+  },
+  "RAVLT - correct A1-A5": {
+    "LongName": "Rey Auditory Verbal Learning Task: learning trials A1 to A5",
+    "Description": "Number of correctly recalled words summed across learning trials A1 to A5 of the Rey Auditory Verbal Learning Task (RAVLT), assessing verbal learning and memory. Higher values indicate greater recall. The analysis adds this value to A6 and A7 and divides by seven. The current workbook contains a value of 434, inconsistent with the conventional five-trial, 15-word sum; that value requires source verification and has not been corrected.",
+    "Units": "arbitrary"
+  },
+  "RAVLT - correct A6 (immediate recall)": {
+    "LongName": "Rey Auditory Verbal Learning Task: A6 immediate recall",
+    "Description": "Number of correctly recalled words on RAVLT trial A6, labelled immediate recall in the source, assessing verbal memory. Higher values indicate greater recall.",
+    "Units": "arbitrary"
+  },
+  "RAVLT - correct A7 (delayed recall)": {
+    "LongName": "Rey Auditory Verbal Learning Task: A7 delayed recall",
+    "Description": "Number of correctly recalled words on RAVLT trial A7, labelled delayed recall in the source, assessing verbal memory. Higher values indicate greater recall. The delay duration is not documented in the workbook header.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-ER - Hit rate for Eyes-Happy": {
+    "LongName": "ERT-eyes: happiness hit rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of target stimuli expressing happiness correctly identified as that emotion. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 20 target trials."
+  },
+  "Emoticom-ER - Hit rate for Eyes-Sad": {
+    "LongName": "ERT-eyes: sadness hit rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of target stimuli expressing sadness correctly identified as that emotion. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 20 target trials."
+  },
+  "Emoticom-ER - False alarm rate for Eyes-Happy": {
+    "LongName": "ERT-eyes: happiness false-alarm rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of non-target stimuli incorrectly identified as happiness. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 60 non-target trials."
+  },
+  "Emoticom-ER - False alarm rate for Eyes-Sad": {
+    "LongName": "ERT-eyes: sadness false-alarm rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of non-target stimuli incorrectly identified as sadness. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 60 non-target trials."
+  },
+  "Emoticom-ER - Hit rate for Eyes-Anger": {
+    "LongName": "ERT-eyes: anger hit rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of target stimuli expressing anger correctly identified as that emotion. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 20 target trials."
+  },
+  "Emoticom-ER - Hit rate for Eyes-Fear": {
+    "LongName": "ERT-eyes: fear hit rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of target stimuli expressing fear correctly identified as that emotion. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 20 target trials."
+  },
+  "Emoticom-ER - False alarm rate for Eyes-Anger": {
+    "LongName": "ERT-eyes: anger false-alarm rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of non-target stimuli incorrectly identified as anger. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 60 non-target trials."
+  },
+  "Emoticom-ER - False alarm rate for Eyes-Fear": {
+    "LongName": "ERT-eyes: fear false-alarm rate",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Proportion of non-target stimuli incorrectly identified as fear. Stored on a 0 to 1 scale, not as a percentage. The project signal-detection calculation assumes 60 non-target trials."
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Happy hits": {
+    "LongName": "ERT-eyes: happiness hit reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for correct identifications of happiness. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Sad hits": {
+    "LongName": "ERT-eyes: sadness hit reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for correct identifications of sadness. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Anger hits": {
+    "LongName": "ERT-eyes: anger hit reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for correct identifications of anger. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Fear hits": {
+    "LongName": "ERT-eyes: fear hit reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for correct identifications of fear. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Anger false alarms": {
+    "LongName": "ERT-eyes: anger false-alarm reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for incorrect responses identifying non-target stimuli as anger. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Fear false alarms": {
+    "LongName": "ERT-eyes: fear false-alarm reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for incorrect responses identifying non-target stimuli as fear. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Happy false alarms": {
+    "LongName": "ERT-eyes: happiness false-alarm reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for incorrect responses identifying non-target stimuli as happiness. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Emoticom-ER - Mean rt (s) for Eyes-Sad false alarms": {
+    "LongName": "ERT-eyes: sadness false-alarm reaction time",
+    "Description": "EMOTICOM Emotion Recognition Task, eyes version (ERT-eyes), assessing basic emotion recognition and misattribution. Mean reaction time for incorrect responses identifying non-target stimuli as sadness. Lower values indicate faster responses.",
+    "Units": "s"
+  },
+  "Mean intensity threshold - Sad (ascending)": {
+    "LongName": "EMOTICOM Intensity Morphing: sadness ascending threshold",
+    "Description": "Mean perceptual detection threshold for sadness in the ascending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from neutral toward sadness; the threshold marks detection of the emerging emotion. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Happy (ascending)": {
+    "LongName": "EMOTICOM Intensity Morphing: happiness ascending threshold",
+    "Description": "Mean perceptual detection threshold for happiness in the ascending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from neutral toward happiness; the threshold marks detection of the emerging emotion. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Sad (descending)": {
+    "LongName": "EMOTICOM Intensity Morphing: sadness descending threshold",
+    "Description": "Mean perceptual detection threshold for sadness in the descending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from sadness toward neutral; the threshold marks when the emotion is no longer detected. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Happy (descending)": {
+    "LongName": "EMOTICOM Intensity Morphing: happiness descending threshold",
+    "Description": "Mean perceptual detection threshold for happiness in the descending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from happiness toward neutral; the threshold marks when the emotion is no longer detected. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Anger (ascending)": {
+    "LongName": "EMOTICOM Intensity Morphing: anger ascending threshold",
+    "Description": "Mean perceptual detection threshold for anger in the ascending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from neutral toward anger; the threshold marks detection of the emerging emotion. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Anger (descending)": {
+    "LongName": "EMOTICOM Intensity Morphing: anger descending threshold",
+    "Description": "Mean perceptual detection threshold for anger in the descending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from anger toward neutral; the threshold marks when the emotion is no longer detected. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Fear (ascending)": {
+    "LongName": "EMOTICOM Intensity Morphing: fear ascending threshold",
+    "Description": "Mean perceptual detection threshold for fear in the ascending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from neutral toward fear; the threshold marks detection of the emerging emotion. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Fear (descending)": {
+    "LongName": "EMOTICOM Intensity Morphing: fear descending threshold",
+    "Description": "Mean perceptual detection threshold for fear in the descending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from fear toward neutral; the threshold marks when the emotion is no longer detected. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Disgust (ascending)": {
+    "LongName": "EMOTICOM Intensity Morphing: disgust ascending threshold",
+    "Description": "Mean perceptual detection threshold for disgust in the ascending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from neutral toward disgust; the threshold marks detection of the emerging emotion. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Mean intensity threshold - Disgust (descending)": {
+    "LongName": "EMOTICOM Intensity Morphing: disgust descending threshold",
+    "Description": "Mean perceptual detection threshold for disgust in the descending condition of the EMOTICOM Intensity Morphing Task (IM): facial expression changes from disgust toward neutral; the threshold marks when the emotion is no longer detected. This indexes emotion perception thresholds. Values represent the original 1 to 15 intensity-level scale, not percentages. The analysis converts levels to percentages using (value - 1) / 14 * 100 when calculating certain derived biases.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Guilty, Victim Intentional": {
+    "LongName": "Moral Emotions: guilt victim intentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving intentional harm. Mean guilt rating on the source 1 to 7 response scale; higher values indicate greater reported guilt. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Ashamed, Victim Intentional": {
+    "LongName": "Moral Emotions: shame victim intentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving intentional harm. Mean shame rating on the source 1 to 7 response scale; higher values indicate greater reported shame. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Guilty, Agent Intentional": {
+    "LongName": "Moral Emotions: guilt agent intentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving intentional harm. Mean guilt rating on the source 1 to 7 response scale; higher values indicate greater reported guilt. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Ashamed, Agent Intentional": {
+    "LongName": "Moral Emotions: shame agent intentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving intentional harm. Mean shame rating on the source 1 to 7 response scale; higher values indicate greater reported shame. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Guilty, Victim Unintentional": {
+    "LongName": "Moral Emotions: guilt victim unintentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving unintentional harm. Mean guilt rating on the source 1 to 7 response scale; higher values indicate greater reported guilt. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Ashamed, Victim Unintentional": {
+    "LongName": "Moral Emotions: shame victim unintentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving unintentional harm. Mean shame rating on the source 1 to 7 response scale; higher values indicate greater reported shame. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Guilty, Agent Unintentional": {
+    "LongName": "Moral Emotions: guilt agent unintentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving unintentional harm. Mean guilt rating on the source 1 to 7 response scale; higher values indicate greater reported guilt. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rating (1-7), Ashamed, Agent Unintentional": {
+    "LongName": "Moral Emotions: shame agent unintentional mean rating",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving unintentional harm. Mean shame rating on the source 1 to 7 response scale; higher values indicate greater reported shame. Exact response-anchor wording is not verified.",
+    "Units": "arbitrary"
+  },
+  "Emoticom-MJ - Mean rt (sec), Guilty, Victim Intentional": {
+    "LongName": "Moral Emotions: guilt victim intentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving intentional harm. Mean time taken to provide the guilt rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Emoticom-MJ - Mean rt (sec), Ashamed, Victim Intentional": {
+    "LongName": "Moral Emotions: shame victim intentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving intentional harm. Mean time taken to provide the shame rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Emoticom-MJ - Mean rt (sec), Guilty, Agent Intentional": {
+    "LongName": "Moral Emotions: guilt agent intentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving intentional harm. Mean time taken to provide the guilt rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Emoticom-MJ - Mean rt (sec), Ashamed, Agent Intentional": {
+    "LongName": "Moral Emotions: shame agent intentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving intentional harm. Mean time taken to provide the shame rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Emoticom-MJ - Mean rt (sec), Guilty, Victim Unintentional": {
+    "LongName": "Moral Emotions: guilt victim unintentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving unintentional harm. Mean time taken to provide the guilt rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Emoticom-MJ - Mean rt (sec), Ashamed, Victim Unintentional": {
+    "LongName": "Moral Emotions: shame victim unintentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the victim (person harmed) in a scenario involving unintentional harm. Mean time taken to provide the shame rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Emoticom-MJ - Mean rt (sec), Guilty, Agent Unintentional": {
+    "LongName": "Moral Emotions: guilt agent unintentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving unintentional harm. Mean time taken to provide the guilt rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Emoticom-MJ - Mean rt (sec), Ashamed, Agent Unintentional": {
+    "LongName": "Moral Emotions: shame agent unintentional rating response time",
+    "Description": "EMOTICOM Moral Emotions Task (ME), labelled Emoticom-MJ in the workbook, assessing social cognition and moral emotions. The participant imagines being the agent (person causing harm) in a scenario involving unintentional harm. Mean time taken to provide the shame rating, not the intensity of that emotion. Lower values indicate faster rating responses.",
+    "Units": "s"
+  },
+  "Overall comments": {
+    "LongName": "Source comments and cohort annotation",
+    "Description": "Free-text source comments that include cohort annotations such as KOHORTE 1, KOHORTE 2, and KOHORTE 3, sometimes with additional text. This is not a clean categorical cohort variable. The analysis uses this field to identify the configured holdout/calibration cohort. Detailed comment contents are not reproduced in this dictionary."
+  },
+  "DatasetMetadata": {
+    "Description": "BIDS-style column dictionary for the current data.xlsx workbook. Keys match the workbook headers exactly. This sidecar alone does not make the Excel workbook or project a BIDS-compliant dataset.",
+    "MissingValueEncoding": "The project workbook uses literal NA and/or blank cells for missing values; the R reader treats both as missing. NA is not a categorical level. A strict BIDS TSV export would use n/a for missing/non-applicable values.",
+    "DescriptionSources": "Exact workbook headers; project src/R/load_and_prepdata.R; task/domain descriptions supplied by the study author; the cited EMOTICOM validation article."
+  }
+}

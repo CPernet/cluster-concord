@@ -1,0 +1,11 @@
+renv/library/
+renv/staging/
+renv/cache/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.rds
+*.RDS
+Thumbs.db
+.DS_Store
